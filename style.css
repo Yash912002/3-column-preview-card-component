@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  max-width: 700px;
+}
+
+/* Card section */
+
+.card {
+  padding: 2rem;
+  min-height: 20rem;
+}
+    
+/* Heading */
+
+.heading {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: hsl(0, 0%, 95%);
+}
+
+/* Button section */
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 30px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.primary {
+  color: hsl(31, 77%, 52%);
+}
+
+.secondary {
+  color: hsl(184, 100%, 22%);
+}
+
+.tertiary {
+  color: hsl(179, 100%, 13%);
+}
+
+
+/* Paragraphs */
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  opacity: 60%;
+}
+
+/* Footer */
+.attribution{
+    margin-top: 20px;
+}
+
+
+@media (max-width: 376px) {
+  .container {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .two {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .three {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+@media (min-width: 376px) {
+  .one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .two {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .three {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
